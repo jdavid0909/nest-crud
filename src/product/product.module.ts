@@ -7,7 +7,8 @@ import { ProductService } from './service/product/product.service';
 
 @Module({
   controllers: [ProductController],
-  imports: [MongooseModule.forRoot('mongodb+srv://jdavid198:kwhNkh2T4zkXapqy@miclustercafe.soh51ly.mongodb.net/cafeDB'),
+  imports: [
+    MongooseModule.forRoot('mongodb+srv://jdavid198:kwhNkh2T4zkXapqy@miclustercafe.soh51ly.mongodb.net/cafeDB'),
   MongooseModule.forFeature([{ name: 'Product', 
   schema: ProductSchema }])
 
